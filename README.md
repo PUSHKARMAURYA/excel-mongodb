@@ -1,6 +1,8 @@
 # excel-mongodb
 
-`excel-mongodb` module is a comprehensive nodejs package to handle xls or xlsx file  upload  and to convert into your mongoDB database collection (with or without specifyin fie path ) . It can be used as node.js library or in browser. Below are some features:
+[![Rate on Openbase](https://badges.openbase.io/js/rating/excel-mongodb.svg)](https://openbase.io/js/excel-mongodb?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+
+`excel-mongodb` module is a comprehensive nodejs package to handle xls or xlsx file  upload  and to convert into your mongoDB database collection (with or without specifiying file path). It can be used as node.js library or in browser. Below are some features:
 you
 *  Work with millions of lines of data
 *  Upload file Easily
@@ -17,7 +19,6 @@ you
 # Menu
 
 * [Quick Start](#quick-start)
-* [Browser Usage](#browser-usage)
 * [Contribution](#contribution)
 
 # Quick Start
@@ -82,31 +83,4 @@ Very much appreciate any types of donation and support.
 6. Code review and merge
 7. Changes will be published to NPM within next version.
 
-
-
-# Browser Usage
-
-To use `csvtojson` in browser is quite simple. There are two ways:
-
-**1. Embed script directly into script tag**
-
-There is a pre-built script located in `browser/csvtojson.min.js`. Simply include that file in a `script` tag in `index.html` page:
-
-```html
-<script src="node_modules/csvtojson/browser/csvtojson.min.js"></script>
-<!-- or use cdn -->
-<script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
-```
-then use a global `csv` function
-```html 
-<script>
-csv({
-	output: "csv"
-})
-.fromString("a,b,c\n1,2,3")
-.then(function(result){
-
-})
-</script>
-```
 
