@@ -1,6 +1,6 @@
 # excel-mongodb
 
-`excel-mongodb` module is a comprehensive nodejs package to handle xls or xlsx file  upload  and to convert into your mongoDB database collection. It can be used as node.js library or in browser. Below are some features:
+`excel-mongodb` module is a comprehensive nodejs package to handle xls or xlsx file  upload  and to convert into your mongoDB database collection (with or without specifyin fie path ) . It can be used as node.js library or in browser. Below are some features:
 you
 *  Work with millions of lines of data
 *  Upload file Easily
