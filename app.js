@@ -14,11 +14,14 @@ const excelToJson = require('convert-excel-to-json');
 var uploads = multer({storage:storage});  
 
 
-function updater(req,url,name){
+function creation(req,url,name){
 	const result = excelToJson({
     sourceFile: req.file.path
 });
-		
+		var ty=name;
+	if(ty==null){
+		ty=req.file.filename.substring(0,req.file.filename.lastIndexOf('.'));
+	}
 		
 		let [first] = Object.keys(result)
 
@@ -32,13 +35,13 @@ MongoClient.connect(url,
         if (err) throw err;
 
         client
-          .collection(name)
+          .collection(ty)
           .insertMany(result[first], (err, rest) => {
             if (err) throw err;
 		
 
             console.log(`Inserted: ${rest.insertedCount} rows`);
-			console.log("table is " + name);
+			console.log("table is " + ty);
 			
           });
       
@@ -50,4 +53,4 @@ MongoClient.connect(url,
 }
 module.exports.uploads=uploads;
 
-module.exports.updater=updater;
+module.exports.creation=creation;

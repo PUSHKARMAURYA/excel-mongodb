@@ -1,6 +1,6 @@
 {
   "name": "excel-mongodb",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "excel file to mongodb",
   "main": "app.js",
   "scripts": {
